@@ -9,6 +9,6 @@ Later, I will come back and add a convolutional neural network (cnn) as a second
 I will then compare the performance of the two models in this project and reflect upon the possible cause.
 ## Project structure and class diagrams
 The project is composed of 3 modules:
-1. The main module, which combines the different modules of the api in order to firstly train the model and then accept user input which can be classified.
+1. The main module, which combines the different modules of the api in order to initially train the model and then accept user input for classification.
 2. The model module containing all models, the loss functions and optimization methods.
 3. The data module constituted of utility functions for io, data preparation and manipulation as well as training, validation and evaluation of models based on their output.
