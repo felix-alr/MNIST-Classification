@@ -44,7 +44,7 @@ class DrawingApp:
 
     def preprocess_image(self):
         # Resize to 28x28, invert colors, normalize
-        img = self.image.resize((28, 28), Image.ANTIALIAS)
+        img = self.image.resize((28, 28), Image.Resampling.LANCZOS)
         img = ImageOps.invert(img)
         img = np.array(img, dtype=np.float32) / 255.0
         img = torch.tensor(img).unsqueeze(0).unsqueeze(0)  # (1,1,28,28)
